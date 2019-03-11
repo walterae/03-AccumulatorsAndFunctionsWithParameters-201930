@@ -124,7 +124,7 @@ def example3():
     # ------------------------------------------------------------------
     # RoseWindow: optionally takes its width and height.
     # ------------------------------------------------------------------
-    width = 700
+    width = 400
     height = 400
     window = rg.RoseWindow(width, height)
 
@@ -132,7 +132,7 @@ def example3():
     # Circle: needs its center and radius.
     # Has  fill_color  instance variable.
     # ------------------------------------------------------------------
-    center_point = rg.Point(300, 100)
+    center_point = rg.Point(200, 200)
     radius = 50
     circle = rg.Circle(center_point, radius)
     circle.fill_color = 'green'
