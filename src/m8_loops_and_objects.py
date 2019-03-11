@@ -20,9 +20,9 @@ def main():
     print_sequence2()
     draw_circles2()
     print_sequence3()
-    draw_circles3()
+    #draw_circles3()
     print_cosines()
-    draw_cosines_and_sines()
+   # draw_cosines_and_sines()
 
 
 def print_sequence1():
@@ -122,6 +122,12 @@ def draw_circles2():
     print('--------------------------------------------------')
     print('Running draw_circles2:  See graphics window')
     print('--------------------------------------------------')
+    window=rg.RoseWindow(400,400)
+    for k in range (18):
+        circle = rg.Circle(rg.Point((2*k+5)*10,100),10)
+        circle.fill_color='blue'
+        circle.attach_to(window)
+    window.close_on_mouse_click()
 
 
 def print_sequence3():
